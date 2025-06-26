@@ -64,25 +64,27 @@
           <label for="color">Color:</label>
           <select id="color" name="user_color">
             <option class="base" selected>Select a color</option>
-            <option class="puns is-hidden" value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>
-            <option class="puns is-hidden" value="darkslategrey">Dark Slate Grey (JS Puns shirt only)</option>
-            <option class="puns is-hidden" value="gold">Gold (JS Puns shirt only)</option>
-            <option class="heart is-hidden" value="tomato">Tomato (I &#9829; JS shirt only)</option>
-            <option class="heart is-hidden" value="steelblue">Steel Blue (I &#9829; JS shirt only)</option>
-            <option class="heart is-hidden" value="dimgrey">Dim Grey (I &#9829; JS shirt only)</option>
+            <option class="puns option is-hidden" value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>
+            <option class="puns option is-hidden" value="darkslategrey">Dark Slate Grey (JS Puns shirt only)</option>
+            <option class="puns option is-hidden" value="gold">Gold (JS Puns shirt only)</option>
+            <option class="heart option is-hidden" value="tomato">Tomato (I &#9829; JS shirt only)</option>
+            <option class="heart option is-hidden" value="steelblue">Steel Blue (I &#9829; JS shirt only)</option>
+            <option class="heart option is-hidden" value="dimgrey">Dim Grey (I &#9829; JS shirt only)</option>
           </select>
         </div>
       </fieldset>
 
       <fieldset class="activities">
         <legend>Register for Activities</legend>
-        <label><input class="200" type="checkbox" name="all"> Main Conference — $200</label>
-        <label><input class="100" type="checkbox" name="js-frameworks"> JavaScript Frameworks Workshop — Tuesday 9am-12pm, $100</label>
-        <label><input class="100" type="checkbox" name="js-libs"> JavaScript Libraries Workshop — Tuesday 1pm-4pm, $100</label>
-        <label><input class="100" type="checkbox" name="express"> Express Workshop — Tuesday 9am-12pm, $100</label>
-        <label><input class="100" type="checkbox" name="node"> Node.js Workshop — Tuesday 1pm-4pm, $100</label>
-        <label><input class="100" type="checkbox" name="build-tools"> Build tools Workshop — Wednesday 9am-12pm, $100</label>
-        <label><input class="100" type="checkbox" name="npm"> npm Workshop — Wednesday 1pm-4pm, $100</label>
+        <label><input data-price="200" class="200" type="checkbox" name="all"> Main Conference — $200</label>
+        <label><input data-price="100" class="100" type="checkbox" name="js-frameworks"> JavaScript Frameworks Workshop — Tuesday 9am-12pm, $100</label>
+        <label><input data-price="100" class="100" type="checkbox" name="js-libs"> JavaScript Libraries Workshop — Tuesday 1pm-4pm, $100</label>
+        <label><input data-price="100" class="100" type="checkbox" name="express"> Express Workshop — Tuesday 9am-12pm, $100</label>
+        <label><input data-price="100" class="100" type="checkbox" name="node"> Node.js Workshop — Tuesday 1pm-4pm, $100</label>
+        <label><input data-price="100" class="100" type="checkbox" name="build-tools"> Build tools Workshop — Wednesday 9am-12pm, $100</label>
+        <label><input data-price="100" class="100" type="checkbox" name="npm"> npm Workshop — Wednesday 1pm-4pm, $100</label>
+
+        <p class="activitiesTotal">Le total est : <span class="totalPrice">0</span> €</p>
         
       </fieldset>
       <fieldset class="paymentContainer">
@@ -90,7 +92,7 @@
 
         <label for="payment">I'm going to pay with:</label>
         <select id="payment" name="user_payment">
-          <!--<option value="select_method">Select Payment Method</option>-->
+          <!-- <option value="select_method">Select Payment Method</option> -->
           <option value="credit card">Credit Card</option>
           <option value="paypal">PayPal</option>
           <option value="bitcoin">Bitcoin</option>
